@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 200;
+    letter-spacing: 0.1px;
+}
+
+a{
+    display:  block;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    height: 4.4rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: saturate(180%) blur(2rem);
+}
+
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 -1rem;
+    width: 100%;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    color: white;
+    padding: 0 1rem;
+    opacity: 0.8;
+    transition: opacity 0.4s;
+    transition: color 0.2s;
+}
+
+.nav-link:hover{
+    opacity: 1;
+}
+
+.nav-link:active{
+    color: 0bb1f4;
+}
+
+.nav-link-logo{
+    width: 12rem;
+    height: 4.4rem; 
+    background: url("OnlyGainsSmall.png") center no-repeat;
+    opacity: 0.9;
+    /* use height and width of image you are usind */
+}
+
+
+
+.carousel {
+    overflow: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    width: 600px;
+  }
+  
+.item {
+    height: 200px;
+    width: 200px;
+    background: red;
+    margin-right: 5px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+  .carousel .item{
+    scroll-snap-align: start;
+}
+
+.nav-list-mobile, .mobile{
+    display: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    height: 10rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+
+/* SMALL screen devices (PHONES) */
+@media screen and (max-width: 800px){
+    /* Here change the images to small images: 
+     i.e. SET background: url("..._medium.jpg" */
+    
+    .nav{
+        text-align: center;
+    }
+   
+    .nav-item{
+        display: none;
+    }
+
+    .nav-list-mobile{
+        display: inline-block;
+    }
+
+    .Active{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        padding: 1rem 3rem 0 3rem;
+    }
+    img{
+        height: 5rem;
+        width: auto;
+    }
+   
+}
+
