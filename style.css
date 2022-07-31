@@ -99,6 +99,11 @@ footer{
     background-color: rgba(0, 0, 0, 1);
 }
 
+.icon-text{
+    color: white;
+    font-size: 1.5rem;
+    z-index: 10000;
+}
 
 /* SMALL screen devices (PHONES) */
 @media screen and (max-width: 800px){
@@ -125,10 +130,27 @@ footer{
         display: flex;
         padding: 1rem 3rem 0 3rem;
     }
-    img{
-        height: 3rem;
+    .home-icon{
+        height: 4rem;
         width: auto;
     }
+
+    .db-icon{
+        height: 5rem;
+        width: auto;
+    }
+
+    .food-icon{
+        height: 5rem;
+        width: auto;
+    }
+
+    .search-icon{
+        height: 8rem;
+        width: auto;
+    }
+  
+
    
 }
 
